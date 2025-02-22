@@ -35,8 +35,8 @@ class CourseBuddyConnector:
         """
 
     def _parse_response(self, response_content):
-        # In a real-world scenario, you'd parse the JSON here
-        # For now, we'll just return the raw content
+        #  parse the JSON here
+        #  return the raw content
         return response_content
 
 # Create an instance of CourseBuddyConnector
