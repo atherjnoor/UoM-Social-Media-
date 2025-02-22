@@ -69,10 +69,14 @@ const SignUp = () => {
             style={{ width: `${passwordStrength * 25}%`, backgroundColor: getStrengthColor(passwordStrength) }}
           />
         </div>
-
+        <div className="register-link">
+          <p>Already have an account? <a href="/login">Login</a></p>
+          </div>
+          
         <button type="submit">Sign Up</button>
       </form>
     </div>
+    
   );
 };
 

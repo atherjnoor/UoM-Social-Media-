@@ -63,7 +63,7 @@ import React, { useState } from 'react';
 import './ProfileLayout.css'; // For styling
 
 const ProfileLayout = ({ profile, onEdit }) => {
-  const { name, username, major, education, courses, interests, skills, profilePicture } = profile;
+  const { name, username, major, YearOfStudy, courses, interests, skills, pronouns, profilePicture } = profile;
   const [isEditing, setIsEditing] = useState(false);
 
   const handleEditClick = () => {
@@ -80,6 +80,7 @@ const ProfileLayout = ({ profile, onEdit }) => {
         </div>
         <h1>{name}</h1>
         <p className="username">@{username}</p>
+        <p className="pronouns">@{pronouns}</p>
         <button className="follow-button">Follow</button>
         <button className="edit-button" onClick={handleEditClick}>Edit Profile</button>
       </div>
@@ -105,8 +106,8 @@ const ProfileLayout = ({ profile, onEdit }) => {
           </div>
 
           <div className="sidebar-section">
-            <h3>Education</h3>
-            <p>{education}</p>
+            <h3>YearOfStudy</h3>
+            <p>{YearOfStudy}</p>
           </div>
 
           <div className="sidebar-section">

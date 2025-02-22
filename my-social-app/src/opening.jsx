@@ -13,9 +13,9 @@ const OpeningPage = () => {
         <button className="button" onClick={() => navigate("/signup")}>
           SIGN UP
         </button>
-        <button className="button" onClick={() => navigate("/profile")}>
+        <button className="button" onClick={() => navigate("/login")}>
           LOG IN
-        </button>
+          </button>
       </div>
     </div>
   );

@@ -18,22 +18,25 @@
 
 // export default ProfilePage;
 import React, { useState } from 'react';
-import './Profile.css';
-
+import './Profile.css'; // Ensure this path is correct
+import { useNavigate } from "react-router-dom";
 
 const Profile = ({ onSubmit }) => {
   const [major, setMajor] = useState('');
   const [courses, setCourses] = useState('');
   const [interests, setInterests] = useState('');
-  const [education, setEducation] = useState('');
+  const [YearOfStudy, setYearOfStudy] = useState('');
   const [skills, setSkills] = useState('');
-  const [profilePicture, setProfilePicture] = useState(null); 
+  const [profilePicture, setProfilePicture] = useState(null); // State for profile picture
+  const [pronouns, setPronouns] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const profileData = { major, education, courses, interests, skills, profilePicture };
+    const profileData = { major, YearOfStudy, courses, interests, skills, pronouns, profilePicture };
+    console.log("Profile Data Submitted:", profileData); // Debug
     onSubmit(profileData); // Pass profile data to App.js
   };
+
   const handleFileChange = (e) => {
     const file = e.target.files[0];
     if (file) {
@@ -47,43 +50,60 @@ const Profile = ({ onSubmit }) => {
 
   return (
     <div className="profile-container">
-    <h1>Student Profile</h1>
-    <form onSubmit={handleSubmit}>
-      {/* Profile Picture Upload */}
-      <div className="form-group">
-        <label>Profile Picture:</label>
-        <input
-          type="file"
-          accept="image/*"
-          onChange={handleFileChange}
-        />
-        {profilePicture && (
-          <div className="profile-picture-preview">
-            <img src={profilePicture} alt="Profile Preview" />
-          </div>
-        )}
-      </div>
+      <h1>Student Profile</h1>
+      <form onSubmit={handleSubmit}>
+        {/* Profile Picture Upload */}
+        <div className="form-group">
+          <label>Profile Picture:</label>
+          <input
+            type="file"
+            accept="image/*"
+            onChange={handleFileChange}
+          />
+          {profilePicture && (
+            <div className="profile-picture-preview">
+              <img src={profilePicture} alt="Profile Preview" />
+            </div>
+          )}
+        </div>
 
-      {/* Major */}
-      <div className="form-group">
-        <label>Major:</label>
-        <input
-          type="text"
-          value={major}
-          onChange={(e) => setMajor(e.target.value)}
-          placeholder="Enter your major"
-        />
-      </div>
+        {/* Pronoun */}
+        <div className="form-group">
+          <label>Pronouns:</label>
+          <input
+            type="text"
+            value={pronouns}
+            onChange={(e) => setPronouns(e.target.value)}
+            placeholder="Enter your pronouns"
+          />
+        </div>
+        {/* Major */}
+        <div className="form-group">
+          <label>Major:</label>
+          <input
+            type="text"
+            value={major}
+            onChange={(e) => setMajor(e.target.value)}
+            placeholder="Enter your major"
+          />
+        </div>
 
         {/* Education */}
         <div className="form-group">
-          <label>Education:</label>
-          <input
-            type="text"
-            value={education}
-            onChange={(e) => setEducation(e.target.value)}
-            placeholder="Enter your school/university"
-          />
+        <div className="form-group">
+        <label>Year of Study:</label>
+        <select
+          value={YearOfStudy}
+          onChange={(e) => setYearOfStudy(e.target.value)}
+        >
+          <option value="">Select your year of study</option>
+          {[...Array(8).keys()].map((year) => (
+            <option key={year} value={year}>
+              {year}
+            </option>
+          ))}
+        </select>
+      </div>
         </div>
 
         {/* Courses Taken */}
@@ -113,12 +133,12 @@ const Profile = ({ onSubmit }) => {
             value={skills}
             onChange={(e) => setSkills(e.target.value)}
             placeholder="List your skills"
-          />
+            />
+            </div>
+    
+            <button type="submit">Save Profile</button>
+          </form>
         </div>
-
-        <button type="submit">Save Profile</button>
-      </form>
-    </div>
   );
 };
 
