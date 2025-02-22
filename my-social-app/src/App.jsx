@@ -3,13 +3,14 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import OpeningPage from './opening'; // Ensure this path is correct
 import SignUp from './signup'; // Ensure this path is correct
 import Profile from './Profile'; // Ensure this path is correct
-import ProfileDisplay from './ProfileDisplay'; // Ensure this path is correct
+// import ProfileDisplay from './ProfileDisplay'; // Ensure this path is correct
 import ProfileLayout from './ProfileLayout';
 import './opening.css'; // Ensure this path is correct
 import './signup.css'; // Ensure this path is correct
 import './Profile.css'; // Ensure this path is correct
-import './ProfileDisplay.css'; // Ensure this path is correct
+// import './ProfileDisplay.css'; // Ensure this path is correct
 import './ProfileLayout.css'
+import './App.css';
 
 function App() {
   const [profile, setProfile] = useState(null);
@@ -17,8 +18,8 @@ function App() {
 
   const handleProfileSubmit = (profileData) => {
     const fullProfile = {
-      name: 'Kash',
-      username: 'revelaufey',
+      name: 'Full name',
+      username: '@username',
       profilePicture: 'https://via.placeholder.com/150', // Default profile picture
       ...profileData,
     };
@@ -44,7 +45,7 @@ function App() {
           path="/profile"
           element={
             profile && !isEditing ? (
-              <ProfileDisplay profile={profile} onEdit={handleEdit} />
+              <ProfileLayout profile={profile} onEdit={handleEdit} />
             ) : (
               <Profile onSubmit={handleProfileSubmit} />
             )

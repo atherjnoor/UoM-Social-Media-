@@ -20,6 +20,7 @@
 import React, { useState } from 'react';
 import './Profile.css';
 
+
 const Profile = ({ onSubmit }) => {
   const [major, setMajor] = useState('');
   const [courses, setCourses] = useState('');
