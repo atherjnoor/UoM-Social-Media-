@@ -61,10 +61,13 @@
 // export default ProfileLayout;
 import React, { useState } from 'react';
 import './ProfileLayout.css'; // For styling
+import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
+import { FaHome } from 'react-icons/fa'; // Import the home icon from react-icons
 
 const ProfileLayout = ({ profile, onEdit }) => {
   const { name, username, major, YearOfStudy, courses, interests, skills, pronouns, profilePicture } = profile;
   const [isEditing, setIsEditing] = useState(false);
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const handleEditClick = () => {
     setIsEditing(true);
@@ -81,7 +84,25 @@ const ProfileLayout = ({ profile, onEdit }) => {
         <h1>{name}</h1>
         <p className="username">@{username}</p>
         <p className="pronouns">@{pronouns}</p>
-        <button className="follow-button">Follow</button>
+
+        {/* Home Button, Followers, and Following */}
+        <div className="profile-actions">
+          <button
+            className="home-button"
+            onClick={() => navigate('/feed')} // Navigate to the feed page
+          >
+            <FaHome /> {/* Home icon */}
+            <span>Home</span> {/* Optional text */}
+          </button>
+
+          {/* Followers and Following */}
+          <div className="follow-stats">
+            <span className="followers">1.2K Followers</span>
+            <span className="following">500 Following</span>
+          </div>
+        </div>
+
+        {/* Edit Button */}
         <button className="edit-button" onClick={handleEditClick}>Edit Profile</button>
       </div>
 

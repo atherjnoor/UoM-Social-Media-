@@ -1,0 +1,134 @@
+/* Main Page Container */
+.main-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f6e0b5; /* Light Beige background */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header Section */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px; /* Limit the width of the header */
+    margin-bottom: 20px;
+  }
+  
+  /* Logo */
+  .logo {
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    flex: 1;
+    margin: 0 20px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  /* Profile Button */
+  .profile-button {
+    padding: 8px 16px;
+    background-color: #3b6790; /* Medium Blue */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .profile-button:hover {
+    background-color: #23486a; /* Dark Blue */
+  }
+  
+  /* Content Section */
+  .content {
+    display: flex;
+    width: 100%;
+    max-width: 800px; /* Limit the width of the content */
+  }
+  
+  /* Feed Section */
+  .feed {
+    flex: 2;
+    margin-right: 20px;
+  }
+  
+  /* Post Card */
+  .post {
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-image {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .post-content {
+    padding: 16px;
+  }
+  
+  .post-content h3 {
+    margin: 0 0 10px;
+    color: #23486a; /* Dark Blue */
+  }
+  
+  .post-content p {
+    margin: 0;
+    color: #4c7b8b; /* Light Blue */
+  }
+  
+  /* Suggested Friends Section */
+  .suggested-friends {
+    flex: 1;
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .suggested-friends h3 {
+    margin: 0 0 10px;
+    color: #23486a; /* Dark Blue */
+  }
+  
+  .suggested-friends ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .suggested-friends li {
+    margin-bottom: 10px;
+  }
+  
+  .suggested-friends span {
+    display: block;
+    font-weight: bold;
+    color: #3b6790; /* Medium Blue */
+  }
+  
+  .suggested-friends small {
+    color: #4c7b8b; /* Light Blue */
+  }
+  
+  /* Loading Spinner */
+  .loading-spinner {
+    text-align: center;
+    padding: 20px;
+    color: #3b6790; /* Medium Blue */
+  }

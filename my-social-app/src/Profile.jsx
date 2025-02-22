@@ -29,6 +29,7 @@ const Profile = ({ onSubmit }) => {
   const [skills, setSkills] = useState('');
   const [profilePicture, setProfilePicture] = useState(null); // State for profile picture
   const [pronouns, setPronouns] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -137,8 +138,16 @@ const Profile = ({ onSubmit }) => {
             </div>
     
             <button type="submit">Save Profile</button>
-          </form>
-        </div>
+
+         {/* Back to Main Page Button */}
+         <button
+         type="button"
+         onClick={() => navigate('/feed')} // Navigate to the main page
+       >
+         Back to Main Page
+       </button>
+     </form>
+   </div>
   );
 };
 

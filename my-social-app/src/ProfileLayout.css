@@ -109,6 +109,8 @@
 }  */
 
 /* Profile Layout Styles */
+./* Profile Layout Styles */
+/* Profile Layout Styles */
 .profile-layout {
   max-width: 1400px; /* Wider container */
   width: 95%; /* Larger width */
@@ -148,22 +150,46 @@
   margin-bottom: 15px;
 }
 
-.follow-button {
-  padding: 10px 20px;
+/* Profile Actions (Home Button, Followers, Following) */
+.profile-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Space between Home Button and Follow Stats */
+  margin-bottom: 15px;
+}
+
+/* Home Button */
+.home-button {
+  padding: 10px 15px; /* Less wide */
   background-color: #efb036; /* Golden Yellow */
   color: white;
   border: none;
   border-radius: 6px;
   font-size: 1rem;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between icon and text */
   transition: background-color 0.3s ease;
-  margin-right: 10px;
 }
 
-.follow-button:hover {
+.home-button:hover {
   background-color: #d89c2e; /* Slightly darker yellow */
 }
 
+/* Follow Stats (Followers and Following) */
+.follow-stats {
+  display: flex;
+  gap: 20px; /* Space between Followers and Following */
+}
+
+.follow-stats span {
+  font-size: 1rem;
+  color: white;
+}
+
+/* Edit Button */
 .edit-button {
   padding: 10px 20px;
   background-color: #4c7b8b; /* Light Blue */
