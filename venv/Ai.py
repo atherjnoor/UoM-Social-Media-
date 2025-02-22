@@ -45,7 +45,7 @@ connector = CourseBuddyConnector()
 # Example student information
 sample_student = {
     "name": "Alice Johnson",
-    "courses": ["Computer Science 101", "Data Structures", "Artificial Intelligence"],
+    "courses": ["COMP 4190", "COMP 3350", "COMP 4180"],
     "interests": ["Machine Learning", "Web Development", "Robotics"]
 }
 
