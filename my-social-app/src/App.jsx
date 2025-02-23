@@ -76,12 +76,14 @@ import Profile from './Profile'; // Ensure this path is correct
 import LoginForm from './LoginForm';
 import ProfileLayout from './ProfileLayout';
 import MainPage from './MainPage'; // Ensure this path is correct
+import CreatePost from './CreatePost'; // Import the CreatePost component
 import './opening.css'; // Ensure this path is correct
 import './signup.css'; // Ensure this path is correct
 import './Profile.css'; // Ensure this path is correct
 import './ProfileLayout.css'; // Ensure this path is correct
 import './App.css';
 import './MainPage.css'; // Ensure this path is correct
+import './CreatePost.css'; // Ensure this path is correct
 
 function App() {
   const [profile, setProfile] = useState(null);
@@ -118,6 +120,9 @@ function App() {
         {/* Main Feed Page */}
         <Route path="/feed" element={<MainPage />} />
 
+        {/* Create Post Page */}
+        <Route path="/create-post" element={<CreatePost />} />
+
         {/* Profile Pages */}
         <Route
           path="/profile"
@@ -125,7 +130,7 @@ function App() {
             profile && !isEditing ? (
               <ProfileLayout profile={profile} onEdit={handleEdit} />
             ) : (
-              <Profile onSubmit={handleProfileSubmit} /> // Ensure onSubmit is passed correctly
+              <Profile onSubmit={handleProfileSubmit} />
             )
           }
         />
