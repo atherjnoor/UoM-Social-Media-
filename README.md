@@ -3,7 +3,7 @@
 [Link to live demo, if applicable]  
 
 ## Inspiration  
-With so much happening across the University of Manchester, students often struggle to stay connected and engaged with campus life. We created `UoM-Social-Media` to bridge that gap, providing a platform where students can share updates, discover community posts, and connect with peers seamlessly.
+With so much happening across the University of Manitoba, students often struggle to stay connected and engaged with campus life. We created `UoM-Social-Media` to bridge that gap, providing a platform where students can share updates, discover community posts, and connect with peers seamlessly.
 
 ## How We Built It  
 We crafted this project using Django, a robust Python framework, to power the backend and handle user authentication, content management, and API endpoints. For the frontend, we leveraged React paired with Tailwind CSS to deliver a responsive and intuitive user interface. PostgreSQL serves as our database, ensuring reliable and scalable data storage.
@@ -22,7 +22,8 @@ Looking ahead, we aim to elevate the platform by:
 - Adding real-time notifications and messaging features  
 - Enhancing user customization options for profiles  
 - Implementing advanced search and filtering for posts  
-- Improving accessibility and performance based on user feedback  
+- Improving accessibility and performance based on user feedback
+- Including Mistral Ai for better matching systems 
 
 ## Built With  
 - **Django** - Backend framework  
