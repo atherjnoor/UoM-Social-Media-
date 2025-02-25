@@ -1,6 +1,6 @@
 # UoM-Social-Media  
 **Main Landing Page**  
-[Link to live demo, if applicable]  
+
 
 ## Inspiration  
 With so much happening across the University of Manitoba, students often struggle to stay connected and engaged with campus life. We created `UoM-Social-Media` to bridge that gap, providing a platform where students can share updates, discover community posts, and connect with peers seamlessly.
