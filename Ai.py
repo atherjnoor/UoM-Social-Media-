@@ -2,14 +2,17 @@ import os
 from mistralai import Mistral
 import json
 from typing import Dict, List, Any
+from dotenv import load_dotenv  # Add this for .env support
+
+# Load environment variables from .env file
+load_dotenv()
 
 class CourseBuddyConnector:
     def __init__(self):
-        os.environ["MISTRAL_API_KEY"] = "YKJHHG2cEwJVeR5dj2dTo6ki8U6U1Dzz"
         api_key = os.environ.get("MISTRAL_API_KEY")
         if not api_key:
             raise ValueError("MISTRAL_API_KEY environment variable is not set")
-        print(f"Using API Key: {api_key}")
+        print(f"Using API Key: {api_key}")  # Optional: Remove or modify for production
         self.client = Mistral(api_key=api_key)
         self.model = "mistral-tiny"  # Changed to a simpler model
 
@@ -77,4 +80,3 @@ sample_student = {
 # Find study buddies
 matches = connector.find_matches(sample_student)
 print(json.dumps(matches, indent=2))
-
