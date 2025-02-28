@@ -1,31 +1,19 @@
-**UoM-Social-Media**
-![Logo](https://raw.githubusercontent.com/atherjnoor/UoM-Social-Media-/main/UMLinked/assets/Logo.png)
+UoM-Social-Media
 
 Main Logo
+![Logo](https://raw.githubusercontent.com/atherjnoor/UoM-Social-Media-/main/UMLinked/assets/Logo.png)
 
-Inspiration
+****InspirationWith so much happening across the University of Manitoba, students often struggle to stay connected and engaged with campus life. We created UoM-Social-Media to bridge that gap, providing a platform where students can share updates, discover community posts, and connect with peers seamlessly.
 
-With so much happening across the University of Manitoba, students often struggle to stay connected and engaged with campus life. We created UoM-Social-Media to bridge that gap, providing a platform where students can share updates, discover community posts, and connect with peers seamlessly.
+****How We Built ItWe crafted this project using Django, a robust Python framework, to power the backend and handle user authentication, content management, and API endpoints. For the frontend, we leveraged React paired with Tailwind CSS to deliver a responsive and intuitive user interface. PostgreSQL serves as our database, ensuring reliable and scalable data storage.
 
-How We Built It
+****Challenges We Ran IntoEarly on, we grappled with designing a scalable database schema to handle dynamic social media content. Balancing performance with real-time updates was tricky, but switching to PostgreSQL and optimizing our queries helped us overcome this hurdle.
 
-We crafted this project using Django, a robust Python framework, to power the backend and handle user authentication, content management, and API endpoints. For the frontend, we leveraged React paired with Tailwind CSS to deliver a responsive and intuitive user interface. PostgreSQL serves as our database, ensuring reliable and scalable data storage.
+****Accomplishments We're Proud OfWe’re thrilled to have built a functional prototype that supports core social media features—posting, commenting, and user profiles—in a short timeframe. The clean integration of Django and React also stands out as a win for rapid development.
 
-Challenges We Ran Into
+****What We LearnedThis project deepened our understanding of full-stack development, particularly how Django’s ORM simplifies backend logic and how React’s component-based structure speeds up UI creation. We also learned the importance of responsive design and efficient API design for a smooth user experience.
 
-Early on, we grappled with designing a scalable database schema to handle dynamic social media content. Balancing performance with real-time updates was tricky, but switching to PostgreSQL and optimizing our queries helped us overcome this hurdle.
-
-Accomplishments We're Proud Of
-
-We’re thrilled to have built a functional prototype that supports core social media features—posting, commenting, and user profiles—in a short timeframe. The clean integration of Django and React also stands out as a win for rapid development.
-
-What We Learned
-
-This project deepened our understanding of full-stack development, particularly how Django’s ORM simplifies backend logic and how React’s component-based structure speeds up UI creation. We also learned the importance of responsive design and efficient API design for a smooth user experience.
-
-What's Next for UoM-Social-Media
-
-Looking ahead, we aim to elevate the platform by:
+****What's Next for UoM-Social-MediaLooking ahead, we aim to elevate the platform by:
 
 Adding real-time notifications and messaging features
 
@@ -37,7 +25,7 @@ Improving accessibility and performance based on user feedback
 
 Including AI-powered recommendation systems for better user matching
 
-Built With
+****Built With
 
 Django - Backend framework
 
@@ -51,7 +39,7 @@ Tailwind CSS - Styling framework
 
 JavaScript - Frontend interactivity
 
-Try It Out Locally 🚀
+****Try It Out Locally 🚀
 
 Clone the repository: git clone https://github.com/yourusername/UoM-Social-Media.git
 
@@ -70,5 +58,7 @@ Backend: python manage.py runserver
 Frontend: npm start
 
 Visit http://localhost:3000 to explore!
+
+
 
 
