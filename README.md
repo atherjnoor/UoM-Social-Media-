@@ -1,4 +1,4 @@
-UoM-Social-Media
+**UoM-Social-Media**
 ![Logo](https://raw.githubusercontent.com/atherjnoor/UoM-Social-Media-/main/UMLinked/assets/Logo.png)
 
 Main Logo
