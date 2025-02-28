@@ -35,7 +35,7 @@ Looking ahead, we aim to elevate the platform by:
 - JavaScript - Frontend interactivity  
 
 **Try It Out Locally 🚀**  
-1. Clone the repository: `git clone https://github.com/yourusername/UoM-Social-Media.git`  
+1. Clone the repository: `git clone https://github.com/atherjnoor/UoM-Social-Media.git`  
 2. Install dependencies:  
    - Backend: `pip install -r requirements.txt`  
    - Frontend: `cd frontend && npm install`  
