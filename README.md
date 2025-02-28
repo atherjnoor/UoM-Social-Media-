@@ -1,5 +1,5 @@
 # UoM-Social-Media  
-**Main Landing Page**  
+**Main Logo**  
 ![Logo](https://raw.githubusercontent.com/atherjnoor/UoM-Social-Media-/main/UMLinked/assets/Logo.png)
 
 ## Inspiration  
